@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# add default.h 
+*.def.h
+
 # Object files
 *.o
 *.ko
