@@ -3,8 +3,9 @@
 
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
-
+	{"", "uname -r", 							0,		0},
+	{"", "~/.config/scripts/network.sh",					60,             0}, 
+	{"Mem:", "~/.config/scripts/memory.sh",         			30,		0},
 	{"vol:", "~/.config/scripts/volume_get.sh",				0,		10},
 	{"", "date '+%a %d %b %R'",					        1,		0},
 };
